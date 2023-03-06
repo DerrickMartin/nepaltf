@@ -1,27 +1,28 @@
 import './App.css';
 
+import Logo from './assets/NepalTF_Logo.png';
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub  <span className="heart">♥️</span> React
+        <img src={Logo} className="App-logo" alt="logo" />
+        <p className='nav-routes'>
+          About
         </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
+        <p className='nav-routes'>
+          Roster
         </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+        <p className='nav-routes'>
+          Track Record
+        </p>
+        <p className='nav-routes'>
+          Contact Us
         </p>
       </header>
+      <div className='app-body'>
+        <p>Welcome to Nepals Track and Field Website!</p>
+      </div>
     </div>
   );
 }
