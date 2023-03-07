@@ -1,12 +1,11 @@
 :root {
     color: white;
   }
-  
-  body {
-    margin: 0px;
-    padding: 0px;
-    background-color: hsl(222, 12%, 25%);;
-  }
+* {
+    margin: 0;
+    padding: 0;
+}
+
   
   .App-header {
     background-color: #282c34;
@@ -39,6 +38,10 @@
   .app-body {
     background-color: hsl(222, 12%, 25%);
     height: 100vh;
+  }
+
+  Link.active {
+    color: white;
   }
  
   @media only screen and (max-width: 720px) { 
