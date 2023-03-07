@@ -6,17 +6,11 @@ import './NavbarStyle.css';
 export default function Navbar() {
     return (
         <>
-        <header className="App-header">
-        
-        <nav>
-          <ul>
-
-        <li>
+        <nav className='App-header'>
           <Link to="/">
             <img src={Logo} className="App-logo" alt="logo" />
           </Link>  
-        </li>
-
+          <ul>
         <li>
           <Link to="/about">
             <p className='nav-routes'>
@@ -34,7 +28,7 @@ export default function Navbar() {
         </li>
 
         <li>
-          <Link to="./pages/trackrecords">
+          <Link to="/trackrecords">
             <p className='nav-routes'>
               Track Records
             </p>
@@ -42,7 +36,7 @@ export default function Navbar() {
         </li>
 
         <li>
-          <Link to="../pages/contactus">
+          <Link to="/contactus">
             <p className='nav-routes'>
              Contact Us
             </p>
@@ -51,10 +45,6 @@ export default function Navbar() {
 
         </ul>
        </nav>
-      </header>
-      <div className='app-body'>
-        <p>Welcome to Nepals Track and Field Website!</p>
-      </div>
       </>
     )
 }

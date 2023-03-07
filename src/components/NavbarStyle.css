@@ -1,38 +1,42 @@
 :root {
     color: white;
+    --dark_mode: #282c34;
   }
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+li {
+  list-style: none;
+}  
 
-  
-  .App-header {
-    background-color: #282c34;
-    height: 13vh;
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+.App-header {
+    background-color: var(--dark_mode);
+    color: white;
+    width: 100%;
+    height: 15vh;
     display: flex;
     flex-direction: row;
-    align-items: top;
-    justify-content: left;
+    align-items: center;
+    justify-content: space-between;
     font-size: calc(10px + 2vmin);
-    color: white;
-    padding: 15px;
+    
+    padding: 5px;
     z-index: 2;
   }
 
-  nav {
-    display: flex;
-    flex-direction: row;
-  }
-  
   .App-link {
     color: #61dafb;
   }
   
   .App-logo {
-    width: 80px;
-    height: 80px;
-    margin-right: 150px;
+    width: 70px;
+    height: 70px;
   }
   
   .nav-routes {
@@ -50,12 +54,18 @@
   }
  
   @media only screen and (max-width: 720px) { 
+    
+    .App-header {
+    height: 13vh;
+    justify-content: space-between;
+    }
     .App-logo {
       margin-right: 0px;
     }
     .nav-routes {
-      font-size: 16px;
-      padding: 13px;
+      font-size: 15px;
+      padding: 10px;
       font-weight: 500;
     }
+  
   }
