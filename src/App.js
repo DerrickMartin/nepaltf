@@ -1,30 +1,34 @@
 import './App.css';
 
-import Logo from './assets/NepalTF_Logo.png';
+//Browser Router v6.4
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Roster from "./pages/Roster";
+import TrackRecords from "./pages/Track-Record";
+import ContactUs from "./pages/Contact-Us";
+import NoPage from "./pages/NoPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={Logo} className="App-logo" alt="logo" />
-        <p className='nav-routes'>
-          About
-        </p>
-        <p className='nav-routes'>
-          Roster
-        </p>
-        <p className='nav-routes'>
-          Track Record
-        </p>
-        <p className='nav-routes'>
-          Contact Us
-        </p>
-      </header>
-      <div className='app-body'>
-        <p>Welcome to Nepals Track and Field Website!</p>
-      </div>
-    </div>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="trackrecords" element={<TrackRecords />} />
+        <Route path="roster" element={<Roster />} />
+        <Route path="contactus" element={<ContactUs />} />
+        <Route path="*" element={<NoPage />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
   );
 }
 
 export default App;
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);

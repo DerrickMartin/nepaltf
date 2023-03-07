@@ -6,54 +6,7 @@ body {
   margin: 0px;
   padding: 0px;
   background-color: hsl(222, 12%, 25%);;
-
 }
 .App {
   text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  height: 15vh;
-  display: flex;
-  flex-direction: row;
-  align-items: top;
-  justify-content: left;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  padding: 10px;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.heart {
-  color: #ff0000;
-}
-
-.App-logo {
-  width: 80px;
-  height: 80px;
-  padding: 10px;
-  margin-right: 150px;
-}
-
-.nav-routes {
-  font-size: 25px;
-  padding: 10px;
-}
-
-.app-body {
-  background-color: hsl(222, 12%, 25%);
-  height: 100vh;
-}
-@media only screen and (max-width: 720px) { 
-  .App-logo {
-    margin-right: 10px;
-  }
-  .nav-routes {
-    font-size: 18px;
-    padding: 15px;
-  }
 }

@@ -1,0 +1,53 @@
+:root {
+    color: white;
+  }
+  
+  body {
+    margin: 0px;
+    padding: 0px;
+    background-color: hsl(222, 12%, 25%);;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    height: 13vh;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: left;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding: 15px;
+    z-index: 2;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  .App-logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 150px;
+  }
+  
+  .nav-routes {
+    font-size: 25px;
+    padding: 10px;
+  }
+  
+  .app-body {
+    background-color: hsl(222, 12%, 25%);
+    height: 100vh;
+  }
+ 
+  @media only screen and (max-width: 720px) { 
+    .App-logo {
+      margin-right: 0px;
+    }
+    .nav-routes {
+      font-size: 16px;
+      padding: 13px;
+      font-weight: 500;
+    }
+  }
