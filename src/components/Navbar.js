@@ -7,12 +7,12 @@ export default function Navbar() {
     return (
         <>
         <nav className='App-header'>
-          <Link to="/">
+          <Link to="/" className='Link-style'>
             <img src={Logo} className="App-logo" alt="logo" />
           </Link>  
           <ul>
         <li>
-          <Link to="/about">
+          <Link to="/about" className='Link-style'>
             <p className='nav-routes'>
               About
             </p>
@@ -20,7 +20,7 @@ export default function Navbar() {
         </li>
 
         <li>
-          <Link to="/roster">
+          <Link to="/roster" className='Link-style'>
             <p className='nav-routes'>
               Roster
             </p>
@@ -28,7 +28,7 @@ export default function Navbar() {
         </li>
 
         <li>
-          <Link to="/trackrecords">
+          <Link to="/trackrecords" className='Link-style'>
             <p className='nav-routes'>
               Track Records
             </p>
@@ -36,7 +36,7 @@ export default function Navbar() {
         </li>
 
         <li>
-          <Link to="/contactus">
+          <Link to="/contactus" className='Link-style'>
             <p className='nav-routes'>
              Contact Us
             </p>
