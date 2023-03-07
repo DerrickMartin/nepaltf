@@ -19,6 +19,11 @@
     padding: 15px;
     z-index: 2;
   }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
   
   .App-link {
     color: #61dafb;

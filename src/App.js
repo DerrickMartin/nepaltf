@@ -3,7 +3,6 @@ import './App.css';
 //Browser Router v6.4
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Roster from "./pages/Roster";
@@ -15,14 +14,12 @@ function App() {
   return (
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="trackrecords" element={<TrackRecords />} />
-        <Route path="roster" element={<Roster />} />
-        <Route path="contactus" element={<ContactUs />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/trackrecords" element={<TrackRecords />} />
+        <Route path="/roster" element={<Roster />} />
+        <Route path="/contactus" element={<ContactUs />} />
         <Route path="*" element={<NoPage />} />
-      </Route>
     </Routes>
   </BrowserRouter>
   );
