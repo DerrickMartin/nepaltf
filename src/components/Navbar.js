@@ -10,7 +10,7 @@ export default function Navbar() {
           <Link to="/" className='Link-style'>
             <img src={Logo} className="App-logo" alt="logo" />
           </Link>  
-          <ul>
+          <ul id="navbar">
         <li>
           <Link to="/about" className='Link-style'>
             <p className='nav-routes'>
