@@ -47,6 +47,16 @@ ul {
     font-size: 25px;
     padding: 10px;
   }
+  .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    visibility: hidden;
+    color: white;
+    opacity: 0;
+  }
 
   @media only screen and (max-width: 720px) { 
     
@@ -69,6 +79,35 @@ ul {
       align-items: center;
     }
 
+    .nav-btn {
+      visibility: visible;
+      opacity: 1;
+    }
+    .responsive_nav {
+      transform: translateY(90vh);
+      margin-top: 10vh;
+    }
+    .nav-close-btn {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+    }
+    #nav {
+    position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: #282c34;
+		transition: 1s;
+	}
+
+
   }
 
   @media only screen and (min-width: 721px) { 
@@ -77,6 +116,5 @@ ul {
       height: 80px;
       margin: 10px;      
     }
-
 
   }

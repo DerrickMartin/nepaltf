@@ -2,15 +2,23 @@ import Logo from '../assets/NepalTF_Logo.png';
 import { Link } from "react-router-dom";
 
 import './NavbarStyle.css';
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Navbar() {
-    return (
+  const navRef = useRef();
+
+	const showNavbar = () => {
+		navRef.current.classList.toggle(
+			"responsive_nav" );
+    };
+  return (
         <>
         <nav className='App-header'>
           <Link to="/" className='Link-style'>
             <img src={Logo} className="App-logo" alt="logo" />
           </Link>  
-          <ul id="navbar">
+          <ul id="nav" ref={navRef}>
         <li>
           <Link to="/about" className='Link-style'>
             <p className='nav-routes'>
@@ -42,8 +50,17 @@ export default function Navbar() {
             </p>
           </Link>
         </li>
-
+        <button
+        className="nav-btn nav-close-btn"
+					onClick={showNavbar}>
+					<FaTimes />
+        </button>
         </ul>
+			<button
+				className="nav-btn"
+				onClick={showNavbar}>
+				<FaBars />
+			</button>
        </nav>
       </>
     )
