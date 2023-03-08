@@ -1,4 +1,6 @@
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer';
+
 
 export default function NoPage() {
     return (
@@ -7,6 +9,7 @@ export default function NoPage() {
         <div className="App">
             <p>Wronge Page</p>
         </div>
+        <Footer />
         </>
     )
 }

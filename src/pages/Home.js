@@ -1,4 +1,6 @@
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+
 
 export default function Home() {
     return (
@@ -7,6 +9,7 @@ export default function Home() {
         <div className="App">
             <p>Home</p>
         </div>
+        <Footer />
         </>
     )
 }
