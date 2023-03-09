@@ -1,106 +1,72 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 a:visited {
   color: 'white';
 }
-
-.Link-style{
-  text-decoration: none;
-  color: var(--body_color);
-}
-li {
-  list-style: none;
-  display: flex;
-}  
-
 ul {
   display: flex;
   justify-content: space-between;
 }
+li {
+  list-style: none;
+  display: flex;
+} 
 .App-header {
-    background-color: var(--nav_background);
-    color: var(--body_color);
-    width: 100%;
-    height: 6rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-size: calc(10px + 2vmin);
-    padding: 5px;
-    z-index: 2;
-  }
+  background-color: var(--nav_background);
+  color: var(--body_color);
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  padding: 5px;
+  z-index: 2;
+}
+.Link-style{
+  text-decoration: none;
+  color: var(--body_color);
+}
+ .App-logo {
+  width: 70px;
+  height: 70px;
+}
+.nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  visibility: hidden;
+  color: var(--body_color);
+  opacity: 0;
+}
 
-  .App-logo {
-    width: 70px;
-    height: 70px;
-  }
-  
-  .nav-routes {
-    font-size: 25px;
-    padding: 10px;
-  }
-  .nav-btn {
-    padding: 5px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    outline: none;
-    visibility: hidden;
-    color: white;
-    opacity: 0;
-  }
-
-  @media only screen and (max-width: 720px) { 
-    
-    .App-header {
+@media only screen and (max-width: 720px) { 
+  .App-header {
     height: 13vh;
     justify-content: space-between;
-    }
-    .App-logo {
-      margin-left: 5px;
-    }
-    .nav-routes {
-      font-size: 14px;
-      padding: 10px;
-      font-weight: 500;
-    }
-  
-    #navbar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .nav-btn {
-      visibility: visible;
-      opacity: 1;
-    }
-    .responsive_nav {
-      transform: translateY(90vh);
-      margin-top: 10vh;
-    }
-    .nav-close-btn {
-      position: absolute;
-      top: 2rem;
-      right: 2rem;
-    }
-    #nav {
+  }
+  .App-logo {
+    margin-left: 5px;
+  }
+  #nav {
     position: fixed;
-		top: -100vh;
-		right: 0;
-		height: 70%;
-		width: 50%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 1.5rem;
-		background-color: var(--nav_background);
-		transition: .5s;
+    top: -100vh;
+    right: 0;
+    height: 70%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--nav_background);
+    transition: .5s;
     z-index: 2;
     border-color: rgb(18, 18, 18);
     border-style: solid;
@@ -108,27 +74,39 @@ ul {
     border-right: none;
     border-bottom-left-radius: .8rem;
     border-width: .16rem;
-	}  
+  }  
   .Link-style-parent {
     width: 100%;
     height: 12%;
     justify-content: center;
     align-items: center;
-
     justify-items: center;
   }
   .Link-style-parent:hover {
-  background-color: #004aad;
-  
-}
+    background-color: #004aad;
   }
-
-  @media only screen and (min-width: 721px) { 
-    .App-logo {
-      width: 80px;
-      height: 80px;
-      margin: 10px;      
-    }
-
-  
+  .nav-routes {
+    padding: 10px;
+    font-weight: 600;
+  }
+  .nav-btn {
+      visibility: visible;
+      opacity: 1;
+  }
+  .responsive_nav {
+      transform: translateY(90vh);
+      margin-top: 10vh;
+  }
+  .nav-close-btn {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+  }
+}
+@media only screen and (min-width: 721px) { 
+  .App-logo {
+    width: 80px;
+    height: 80px;
+    margin: 10px;      
+  }
 }
