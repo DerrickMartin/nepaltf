@@ -19,7 +19,7 @@ export default function Navbar() {
             <img src={Logo} className="App-logo" alt="logo" />
           </Link>  
           <ul id="nav" ref={navRef}>
-        <li>
+        <li className='Link-style-parent'>
           <Link to="/about" className='Link-style'>
             <p className='nav-routes'>
               About
@@ -27,7 +27,7 @@ export default function Navbar() {
           </Link>
         </li>
 
-        <li>
+        <li className='Link-style-parent'>
           <Link to="/roster" className='Link-style'>
             <p className='nav-routes'>
               Roster
@@ -35,7 +35,7 @@ export default function Navbar() {
           </Link>
         </li>
 
-        <li>
+        <li className='Link-style-parent'>
           <Link to="/trackrecords" className='Link-style'>
             <p className='nav-routes'>
               Track Records
@@ -43,7 +43,7 @@ export default function Navbar() {
           </Link>
         </li>
 
-        <li>
+        <li className='Link-style-parent'>
           <Link to="/contactus" className='Link-style'>
             <p className='nav-routes'>
              Contact Us
@@ -53,13 +53,13 @@ export default function Navbar() {
         <button
         className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
-					<FaTimes />
+					<FaTimes style={{ width: 30, height: 30}} />
         </button>
         </ul>
 			<button
 				className="nav-btn"
 				onClick={showNavbar}>
-				<FaBars />
+				<FaBars style={{ width: 30, height: 30, margin: 10}} />
 			</button>
        </nav>
       </>

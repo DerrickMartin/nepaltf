@@ -15,9 +15,9 @@ export default function Footer() {
             </div>
             <div className='socialmedia-links'>
                 
-                <SocialIcon url="https://facebook.com" style={{ width: 30, height: 30}}/>
-                <SocialIcon url="https://tiktok.com" style={{ width: 30, height: 30}}/>
-                <SocialIcon url="https://instagram.com" style={{ width: 30, height: 30}}/>
+                <SocialIcon url="https://facebook.com" style={{ width: 30, height:30, margin: 5}}/>
+                <SocialIcon url="https://tiktok.com" style={{ width: 30, height: 30, margin: 5}}/>
+                <SocialIcon url="https://instagram.com" style={{ width: 30, height: 30, margin: 5}}/>
             <div className='donate-section'>
                 <DonateButton/>
             </div>
