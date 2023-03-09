@@ -2,7 +2,7 @@ import Logo from '../assets/NepalTF_Logo.png';
 import { Link } from "react-router-dom";
 
 import './NavbarStyle.css';
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Navbar() {
@@ -12,6 +12,25 @@ export default function Navbar() {
 		navRef.current.classList.toggle(
 			"responsive_nav" );
     };
+    const [isOpen, setOpen] = useState(false);
+    const toggleModal = () => {
+        setOpen(!isOpen)
+    }
+
+    const [theme, setTheme] = useState(
+      localStorage.getItem('theme') || 'light'
+      );
+      const toggleTheme = () => {
+      if (theme === 'light') {
+      setTheme('dark');
+      } else {
+      setTheme('light');
+      }
+      };
+      useEffect(() => {
+      localStorage.setItem('theme', theme);
+      document.body.className = theme;
+      }, [theme]);
   return (
         <>
         <nav className='App-header'>
@@ -50,11 +69,24 @@ export default function Navbar() {
             </p>
           </Link>
         </li>
+
+        <div className={`App ${theme}`}>
+                    <button onClick={toggleTheme} 
+                            style={{width: 80, 
+                                    height: 30, 
+                                    backgroundColor: '#282c34', 
+                                    borderRadius: 12,
+                                    borderWidth: 1, 
+                                    borderColor: 'green',
+                                    }} />
+                    <h1>Light/Dark</h1>
+                </div>
         <button
         className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
 					<FaTimes style={{ width: 30, height: 30}} />
         </button>
+
         </ul>
 			<button
 				className="nav-btn"
