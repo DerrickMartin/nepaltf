@@ -20,20 +20,6 @@ export default function Navbar() {
         setOpen(!isOpen)
     }
 
-    const [theme, setTheme] = useState(
-      localStorage.getItem('theme') || 'light'
-      );
-      const toggleTheme = () => {
-      if (theme === 'light') {
-      setTheme('dark');
-      } else {
-      setTheme('light');
-      }
-      };
-      useEffect(() => {
-      localStorage.setItem('theme', theme);
-      document.body.className = theme;
-      }, [theme]);
   return (
         <>
         <nav className='App-header'>
@@ -91,16 +77,3 @@ export default function Navbar() {
     )
 }    
 
-/* <div className={`App ${theme}`}>
-                    <button onClick={toggleTheme} 
-                            style={{width: 80, 
-                                    height: 30, 
-                                    backgroundColor: '#282c34', 
-                                    borderRadius: 12,
-                                    borderWidth: 1, 
-                                    borderColor: 'green',
-                                    }} />
-                    <h1>Light/Dark</h1>
-                </div>
-
-*/
