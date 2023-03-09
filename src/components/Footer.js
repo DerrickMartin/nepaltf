@@ -4,7 +4,10 @@ import './FooterStyles.css';
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 
-export default function Navbar() {
+import DonateButton from './donate';
+
+
+export default function Footer() {
     return (
         <div className="footersection"> 
             <div className='top-footer'>
@@ -12,13 +15,15 @@ export default function Navbar() {
             </div>
             <div className='socialmedia-links'>
                 
-                <SocialIcon url="https://facebook.com" className='social-icons'/>
-                <SocialIcon url="https://instagram.com" className='social-icons'/>
-                <SocialIcon url="https://tiktok.com" className='social-icons'/>
-
-
+                <SocialIcon url="https://facebook.com" style={{ width: 30, height: 30}}/>
+                <SocialIcon url="https://tiktok.com" style={{ width: 30, height: 30}}/>
+                <SocialIcon url="https://instagram.com" style={{ width: 30, height: 30}}/>
+            <div className='donate-section'>
+                <DonateButton/>
+            </div>
             </div>
         </div>
 
     )
 }
+
