@@ -20,9 +20,8 @@
 }
 .donate-section {
     display: flex;
-    position: fixed;
-    right: 30px;
-    max-width: 30%;
+    max-width: 50%;
+    margin-left: auto;
     }
 
 @media only screen and (max-width: 720px) { 
@@ -31,8 +30,11 @@
         height: 60px;
         margin: 10px;
     } 
+    .donate-section {
+        width: 50%;
+        margin-right: 10px;
+        }
 }
-
 @media only screen and (min-width: 721px) { 
     .App-logo {
         width: 80px;
@@ -40,8 +42,6 @@
         margin: 10px; 
     }
     .donate-section {
-        right: 30px;
-        max-width: 30%;
-        padding-left: 50px;
+        width: 50%
         }
 }

@@ -13,8 +13,7 @@ export default function Footer() {
             <div className='top-footer'>
             <img src={Logo} className="App-logo" alt="logo" />
             </div>
-            <div className='socialmedia-links'>
-                
+            <div className='socialmedia-links'> 
                 <SocialIcon url="https://facebook.com" style={{ width: 30, height:30, margin: 5}}/>
                 <SocialIcon url="https://tiktok.com" style={{ width: 30, height: 30, margin: 5}}/>
                 <SocialIcon url="https://instagram.com" style={{ width: 30, height: 30, margin: 5}}/>
