@@ -1,11 +1,9 @@
-:root {
-  color: white;
-}
 
 body {
   margin: 0px;
   padding: 0px;
-  background-color: hsl(222, 12%, 25%);;
+  background-color: var(--body_background);
+  color: var(--body_color);
 }
 .App {
   text-align: center;

@@ -5,6 +5,9 @@ import './NavbarStyle.css';
 import { useRef, useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
+import DarkMode from './DarkMode/DarkMode';
+
+
 export default function Navbar() {
   const navRef = useRef();
 
@@ -69,18 +72,8 @@ export default function Navbar() {
             </p>
           </Link>
         </li>
+        <DarkMode />
 
-        <div className={`App ${theme}`}>
-                    <button onClick={toggleTheme} 
-                            style={{width: 80, 
-                                    height: 30, 
-                                    backgroundColor: '#282c34', 
-                                    borderRadius: 12,
-                                    borderWidth: 1, 
-                                    borderColor: 'green',
-                                    }} />
-                    <h1>Light/Dark</h1>
-                </div>
         <button
         className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
@@ -96,4 +89,18 @@ export default function Navbar() {
        </nav>
       </>
     )
-}
+}    
+
+/* <div className={`App ${theme}`}>
+                    <button onClick={toggleTheme} 
+                            style={{width: 80, 
+                                    height: 30, 
+                                    backgroundColor: '#282c34', 
+                                    borderRadius: 12,
+                                    borderWidth: 1, 
+                                    borderColor: 'green',
+                                    }} />
+                    <h1>Light/Dark</h1>
+                </div>
+
+*/
