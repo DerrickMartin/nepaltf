@@ -1,5 +1,5 @@
 import Navbar from '../components/Navbar'
-import NepalMap from '../assets/Nepal_map.PNG'
+import NepalMap from '../assets/nepal_map1.png'
 import Footer from '../components/Footer';
 
 

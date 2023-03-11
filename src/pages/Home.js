@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import HomeSelection from '../components/Home/homeSection';
 
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
         <>
         <Navbar />
         <div className="App">
-            <p>Home</p>
+            <HomeSelection />
         </div>
         <Footer />
         </>
