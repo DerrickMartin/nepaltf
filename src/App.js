@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Roster from "./pages/Roster";
-import TrackRecords from "./pages/Track-Record";
+import NepaliRecords from "./pages/Nepali-Record";
 import ContactUs from "./pages/Contact-Us";
 import NoPage from "./pages/NoPage";
 
@@ -16,7 +16,7 @@ function App() {
     <Routes>
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/trackrecords" element={<TrackRecords />} />
+        <Route path="/nepalirecords" element={<NepaliRecords />} />
         <Route path="/roster" element={<Roster />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="*" element={<NoPage />} />
