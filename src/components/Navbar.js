@@ -43,7 +43,7 @@ export default function Navbar() {
         </li>
 
         <li className='Link-style-parent'>
-          <Link to="/trackrecords" className='Link-style'>
+          <Link to="/nepalirecords" className='Link-style'>
             <p className='nav-routes'>
               Nepali Records
             </p>
