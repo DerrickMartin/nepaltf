@@ -45,7 +45,7 @@ export default function Navbar() {
         <li className='Link-style-parent'>
           <Link to="/trackrecords" className='Link-style'>
             <p className='nav-routes'>
-              Track Records
+              Nepali Records
             </p>
           </Link>
         </li>
