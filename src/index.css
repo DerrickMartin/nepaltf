@@ -3,6 +3,8 @@
   --body_color: black;
   --nav_background: #acacac;
   --footer_background: #acacac;
+  --record_background: #eaeaea;
+  --record_border: #d5d5d5;
 }
 
 [data-theme="dark"] {
@@ -10,6 +12,8 @@
   --body_color: white;
   --nav_background: #181b20;
   --footer_background: #181b20;
+  --record_background: hsl(0, 0%, 35%);
+  --record_border: hsl(0, 0%, 41%);
 }
 body {
   margin: 0;

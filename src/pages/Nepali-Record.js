@@ -1,50 +1,72 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer';
 
+import './Nepali_Record_Listing.css'
 
 export default function Nepali_Records() {
     return (
         <>
         <Navbar />
         <h1>Nepali Records</h1>
-        <h5>Updated as of March 12, 2023</h5> 
+        <h6>Updated as of March 12, 2023</h6> 
     
-        <div style={{width: '80%', flexDirection:'column', display: 'flex'}}>
-            <h4>Mens</h4>
+        <div className="Record_List" >
+            <h4 style={{width:'100', flexDirection: 'row', borderBottomStyle: 'solid', padding: 7, borderBottomColor: 'black',}}>Mens</h4>
             <div className='RecordHeader'>
-                <p>Event</p>
-                <p>Record</p>
-                <p>Athlete</p>
-                <p>Date</p>
-                <p>Meet</p>
-                <p>Place</p>
+                <p className='col_listing'>Event</p>
+                <p className='col_listing'>Record</p>
+                <p className='col_listing'>Athlete</p>
+                <p className='col_listing'>Date</p>
+                <p className='col_listing'>Meet</p>
+                <p className='col_listing'>Place</p>
             </div>
 
             <div className='RecordListing'>
-              <p>100 m</p>
-              <p>10.71</p>
-              <p>Ram Krishna Chaudhari</p>
-              <p>09/26/1999</p>
-              <p>South Asian Games</p>
-              <p>Kathmandu, Nepal</p>
+                <p className='col_listing'>100 m</p>
+                <p className='col_listing'>10.71</p>
+                <p className='col_listing'>Ram Krishna Chaudhari</p>
+                <p className='col_listing'>09/26/1999</p>
+                <p className='col_listing'>South Asian Games</p>
+                <p className='col_listing'>Kathmandu, Nepal</p>
             </div>
 
             <div className='RecordListing'>
-              <p>200 m</p>
-              <p>21.92</p>
-              <p>Ram Krishna Chaudhari</p>
-              <p>12/23/1995</p>
-              <p>South Asian Games</p>
-              <p>Chennai, India</p>
+            <p className='col_listing'>200 m</p>
+            <p className='col_listing'>21.92</p>
+            <p className='col_listing'>Ram Krishna Chaudhari</p>
+            <p className='col_listing'>12/23/1995</p>
+            <p className='col_listing'>South Asian Games</p>
+            <p className='col_listing'>Chennai, India</p>
             </div>
 
         </div>
-        <div style={{width: '80%', flexDirection:'column', display: 'flex'}}>
-            <h4>Women</h4>
+        <div className="Record_List" >
+            <h4 style={{width:'100', flexDirection: 'row', borderBottomStyle: 'solid', padding: 7, borderBottomColor: 'black',}}>Women</h4>
             <div className='RecordHeader'>
-                <p>100 meter</p>
-                <p>Name</p>
-                <p>Meet</p>
+                <p className='col_listing'>Event</p>
+                <p className='col_listing'>Record</p>
+                <p className='col_listing'>Athlete</p>
+                <p className='col_listing'>Date</p>
+                <p className='col_listing'>Meet</p>
+                <p className='col_listing'>Place</p>
+            </div>
+
+            <div className='RecordListing'>
+                <p className='col_listing'>100 m</p>
+                <p className='col_listing'>10.71</p>
+                <p className='col_listing'>Ram Krishna Chaudhari</p>
+                <p className='col_listing'>09/26/1999</p>
+                <p className='col_listing'>South Asian Games</p>
+                <p className='col_listing'>Kathmandu, Nepal</p>
+            </div>
+
+            <div className='RecordListing'>
+            <p className='col_listing'>200 m</p>
+            <p className='col_listing'>21.92</p>
+            <p className='col_listing'>Ram Krishna Chaudhari</p>
+            <p className='col_listing'>12/23/1995</p>
+            <p className='col_listing'>South Asian Games</p>
+            <p className='col_listing'>Chennai, India</p>
             </div>
         </div>
         <Footer />

@@ -1,0 +1,33 @@
+.Record_List {
+    background-color: var(--record_background);
+    border-color: var(--record_border);
+    border-width: 1pxs;
+    border-style: solid;
+    border-radius: 7px;
+    width: 96%;
+    margin: 2%;
+    font-size: 13;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+}
+.RecordHeader {
+    flex-direction: row;
+    width: 100%;
+    font-weight: 600;
+    background-color: rgb(66, 64, 64);
+}
+.RecordListing {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.col_listing {
+    width: 16.64%;
+    display: inline-block;
+    border-style: solid;
+    padding: 3%;
+    border-color: var(--body_background);
+
+    
+}
