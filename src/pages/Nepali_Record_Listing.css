@@ -32,8 +32,9 @@
 
 @media only screen and (max-width: 720px) { 
     .col_listing {
-        font-size: 12px;
-        padding-left: 3px;
+        font-size: 11px;
+        padding-left: 2px;
         border-width: .5px;
+        font-weight: 500;
     } 
 }
