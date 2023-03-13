@@ -6,7 +6,7 @@
     border-radius: 7px;
     width: 96%;
     margin: 2%;
-    font-size: 13;
+    font-size: 13px;
     display: flex;
     flex-direction: column;
     padding: 2px;
@@ -14,8 +14,10 @@
 .RecordHeader {
     flex-direction: row;
     width: 100%;
-    font-weight: 600;
-    background-color: rgb(66, 64, 64);
+    font-weight: bold;
+    font-size: 15px;
+    background-color: var(--record_category_header);
+
 }
 .RecordListing {
     display: flex;

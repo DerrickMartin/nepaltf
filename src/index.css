@@ -6,6 +6,7 @@
   --record_background: #eaeaea;
   --record_border: #d5d5d5;
   --inner_record_border: rgb(17, 17, 17);
+  --record_category_header: #acacac;
 }
 
 [data-theme="dark"] {
@@ -15,7 +16,9 @@
   --footer_background: #181b20;
   --record_background: hsl(0, 0%, 35%);
   --record_border: hsl(0, 0%, 41%);
-  --inner_record_border: #181b20
+  --inner_record_border: #181b20;
+  --record_category_header: rgb(66, 64, 64);
+
 }
 body {
   margin: 0;
