@@ -27,7 +27,7 @@
     display: inline-block;
     border-style: solid;
     padding: 3%;
-    border-color: var(--body_background);
+    border-color: var(--inner_record_border);
 
     
 }

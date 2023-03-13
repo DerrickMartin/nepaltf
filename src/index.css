@@ -5,6 +5,7 @@
   --footer_background: #acacac;
   --record_background: #eaeaea;
   --record_border: #d5d5d5;
+  --inner_record_border: rgb(17, 17, 17);
 }
 
 [data-theme="dark"] {
@@ -14,6 +15,7 @@
   --footer_background: #181b20;
   --record_background: hsl(0, 0%, 35%);
   --record_border: hsl(0, 0%, 41%);
+  --inner_record_border: #181b20
 }
 body {
   margin: 0;
