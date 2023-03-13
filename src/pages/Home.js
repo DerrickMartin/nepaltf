@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import HomeSelection from '../components/Home/homeSection';
-
+import {useEffect } from 'react';
 
 export default function Home() {
 const googleTranslateElementInit = () => {
