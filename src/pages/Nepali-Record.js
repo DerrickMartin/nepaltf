@@ -11,7 +11,7 @@ export default function Nepali_Records() {
         <h6>Updated as of March 12, 2023</h6> 
     
         <div className="Record_List" >
-            <h3 style={{width:'100', flexDirection: 'row', borderBottomStyle: 'solid', padding: 8, borderBottomColor: 'black',}}>Mens</h3>
+            <h2 style={{width:'100', flexDirection: 'row', borderBottomStyle: 'solid', padding: 8, borderBottomColor: 'black',}}>Mens</h2>
             <div className='RecordHeader'>
                 <p className='col_listing'>Event</p>
                 <p className='col_listing'>Record</p>
@@ -103,9 +103,9 @@ export default function Nepali_Records() {
             </div>
 
             <div className='RecordListing'>
-                <p className='col_listing'>3000 m steeplechase</p>
+                <p className='col_listing'>3000 m steeple- chase</p>
+                <p className='col_listing'>8:57.30</p>
                 <p className='col_listing'>Rajendra Bahadur Bhandari</p>
-                <p className='col_listing'>Gop Bahadur Adhikari</p>
                 <p className='col_listing'>04/05/2004</p>
                 <p className='col_listing'>South Asian Games</p>
                 <p className='col_listing'>Islamabad, Pakistan</p>
@@ -123,7 +123,7 @@ export default function Nepali_Records() {
 
 
         <div className="Record_List" >
-            <h3 style={{width:'100', flexDirection: 'row', borderBottomStyle: 'solid', padding: 8, borderBottomColor: 'black',}}>Women</h3>
+            <h2 style={{width:'100', flexDirection: 'row', borderBottomStyle: 'solid', padding: 8, borderBottomColor: 'black',}}>Women</h2>
             <div className='RecordHeader'>
                 <p className='col_listing'>Event</p>
                 <p className='col_listing'>Record</p>

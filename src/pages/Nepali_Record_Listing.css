@@ -17,6 +17,7 @@
     font-weight: bold;
     font-size: 15px;
     background-color: var(--record_category_header);
+    padding-left: 5px;
 
 }
 .RecordListing {
