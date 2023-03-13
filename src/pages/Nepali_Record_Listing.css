@@ -28,6 +28,11 @@
     border-style: solid;
     padding: 3%;
     border-color: var(--inner_record_border);
+}
 
-    
+@media only screen and (max-width: 720px) { 
+    .col_listing {
+        font-size: 12px;
+        padding-left: 2px;
+    } 
 }
