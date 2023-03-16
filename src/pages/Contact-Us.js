@@ -1,6 +1,6 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer';
-import Team from '../components/DarkMode/About/team';
+import Team from '../components/About/team';
 
 
 export default function Contact_Us() {
