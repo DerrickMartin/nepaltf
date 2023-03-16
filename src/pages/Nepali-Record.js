@@ -9,6 +9,9 @@ export default function Nepali_Records() {
         <Navbar />
         <h1>Nepali Records</h1>
         <h6>Updated as of March 12, 2023</h6> 
+        <h6 style={{color: 'tomato', fontSize: 13}}>
+            (Hand Timed) raced are not included
+        </h6>
     
         <div className="Record_List" >
             <h2 style={{width:'100', flexDirection: 'row', borderBottomStyle: 'solid', padding: 8, borderBottomColor: 'black',}}>Mens</h2>
