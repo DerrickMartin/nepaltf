@@ -12,7 +12,7 @@ export default function Nepali_Records() {
         <h1>Nepali Records</h1>
         <h6>Updated as of March 12, 2023</h6> 
         <h6 style={{color: 'tomato', fontSize: 13}}>
-            (Hand Timed) raced are not included
+            (Hand Timed) races are not included
         </h6>
         <MensRecordList />
         <WomensRecordList />
