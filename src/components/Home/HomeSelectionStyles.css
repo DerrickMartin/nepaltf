@@ -3,15 +3,15 @@
     flex-direction: row;
 }
 .HeroImage {
-    width: 45%;
-    padding-left: 5%;
+    width: 48%;
+    padding-left: 3%;
 }
 
 .HeroText {
     justify-content: center;
     align-items: center;
-    margin-top: 90px;
-    padding-inline: 20px;
-    width: 25%;
-    font-size: 30px;
+    margin-top: 30px;
+    padding-inline: 10px;
+    width: 30%;
+    font-size: 24px;
 }
