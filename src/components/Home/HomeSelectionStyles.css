@@ -1,0 +1,17 @@
+.HeroSection {
+    display: flex;
+    flex-direction: row;
+}
+.HeroImage {
+    width: 45%;
+    padding-left: 5%;
+}
+
+.HeroText {
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    padding-inline: 20px;
+    width: 25%;
+    font-size: 30px;
+}
