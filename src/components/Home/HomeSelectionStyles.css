@@ -4,7 +4,7 @@
     height: 300px;
 }
 .HeroImage {
-    width: 52%;
+    width: 60%;
     padding-left: 2%;
 }
 
@@ -15,4 +15,5 @@
     padding-inline: 11px;
     width: 30%;
     font-size: 24px;
+    margin-left: 10px;
 }
