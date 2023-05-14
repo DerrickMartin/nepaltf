@@ -1,11 +1,16 @@
-import NepalHero from '../../assets/nepal_home.jpg';
+
 import './HomeSelectionStyles.css';
+
+import videoFile from '../../assets/HomePage.mp4';
 
 export default function HomeSelection() {
 return(
 <>
 <div className='HeroSection'>
-    <img src={NepalHero} className='HeroImage' alt="Home Page Nepal" />
+    <video controls className='HeroImage'> 
+        <source src={videoFile} type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
     <>
         <h3 className='HeroText'>Welcome to our Nepali track and field website</h3>
 
