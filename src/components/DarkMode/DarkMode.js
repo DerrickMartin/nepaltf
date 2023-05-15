@@ -1,47 +1,41 @@
-import React, { useEffect } from "react";
-import { ReactComponent as Sun } from "./Sun.svg";
-import { ReactComponent as Moon } from "./Moon.svg";
+//import { ReactComponent as Sun } from "./Sun.svg";
+//import { ReactComponent as Moon } from "./Moon.svg";
 import "./DarkMode.css";
 
-const DarkMode = ({ setDarkMode }) => {
-  const setDarkTheme = () => {
-    document.querySelector("body").setAttribute("data-theme", "dark");
-    setDarkMode(true);
-    localStorage.setItem("selectedTheme", "dark");
-  };
+import React, { useState, useEffect } from 'react';
 
-  const setLightTheme = () => {
-    document.querySelector("body").setAttribute("data-theme", "light");
-    setDarkMode(false);
-    localStorage.setItem("selectedTheme", "light");
-  };
+const DarkMode = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    const selectedTheme = localStorage.getItem("selectedTheme");
-    if (selectedTheme === "dark") {
-      setDarkMode(true);
+    // Check local storage for saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      setIsDarkMode(true);
+      document.documentElement.classList.add('dark-mode');
+    } else {
+      document.documentElement.classList.remove('dark-mode');
     }
-  }, [setDarkMode]);
+  }, []);
 
-  const toggleTheme = (e) => {
-    if (e.target.checked) setDarkTheme();
-    else setLightTheme();
+  const toggleTheme = () => {
+    // Toggle theme state
+    setIsDarkMode(!isDarkMode);
+
+    // Save theme preference to local storage
+    const themePreference = isDarkMode ? 'light' : 'dark';
+    localStorage.setItem('theme', themePreference);
+
+    // Apply dark mode class to document element
+    if (themePreference === 'dark') {
+      document.documentElement.classList.add('dark-mode');
+    } else {
+      document.documentElement.classList.remove('dark-mode');
+    }
   };
 
   return (
-    <div className="dark_mode">
-      <input
-        className="dark_mode_input"
-        type="checkbox"
-        id="darkmode-toggle"
-        onChange={toggleTheme}
-        defaultChecked={localStorage.getItem("selectedTheme") === "dark"}
-      />
-      <label className="dark_mode_label" htmlFor="darkmode-toggle">
-        <Sun />
-        <Moon />
-      </label>
-    </div>
+    <button onClick={toggleTheme}>{isDarkMode ? 'Light Mode' : 'Dark Mode'}</button>
   );
 };
 

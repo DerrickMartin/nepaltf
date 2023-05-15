@@ -9,7 +9,7 @@
   --record_category_header: #acacac;
 }
 
-[data-theme="dark"] {
+.dark-mode {
   --body_background: #282c34;
   --body_color: white;
   --nav_background: #181b20;
