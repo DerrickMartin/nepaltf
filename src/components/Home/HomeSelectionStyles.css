@@ -3,6 +3,7 @@
     flex-direction: row;
     height: 300px;
     margin-top: 15px;
+    padding-bottom: 2rem;
 }
 .HeroImage {
     width: 60%;
