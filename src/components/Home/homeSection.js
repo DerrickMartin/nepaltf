@@ -7,9 +7,9 @@ export default function HomeSelection() {
 return(
 <>
 <div className='HeroSection'>
-    <video controls className='HeroImage'> 
+    <video muted loop autoplay className='HeroImage'>
         <source src={videoFile} type="video/mp4" />
-        Your browser does not support the video tag.
+    Your browser does not support the video tag.
     </video>
     <>
         <h3 className='HeroText'>Welcome to our Nepali track and field website</h3>
