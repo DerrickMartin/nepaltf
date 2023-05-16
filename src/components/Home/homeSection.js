@@ -7,8 +7,8 @@ return(
 <>
 <div className='HeroSection'>
     <div className='HeroImage'>
-<iframe src="https://giphy.com/embed/AntXHmBCQjxT9W0EkS" width="480" height="270" title='Nepal' className="giphy-embed" allowFullScreen></iframe>
-</div>
+  <iframe src="https://giphy.com/embed/AntXHmBCQjxT9W0EkS" width="54%"  title="Nepal" height="96%"  allowFullScreen></iframe>
+    </div>
 
     <>
         <h3 className='HeroText'>Welcome to our Nepali track and field website</h3>
