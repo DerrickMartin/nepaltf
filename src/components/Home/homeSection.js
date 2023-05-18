@@ -1,13 +1,11 @@
 
-import './HomeSelectionStyles.css';
-
-
+import gifImage from '../../assets/nepal.gif';
 export default function HomeSelection() {
 return(
 <>
 <div className='HeroSection'>
     <div className='HeroImage'>
-  <iframe src="https://giphy.com/embed/AntXHmBCQjxT9W0EkS" width="54%"  title="Nepal" height="96%"  allowFullScreen></iframe>
+    <img src={gifImage} alt="GIF of Nepal" style={{ width: '60%', height: '40%' }} />
     </div>
 
     <>
