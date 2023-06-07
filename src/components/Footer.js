@@ -5,6 +5,7 @@ import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 
 import DonateButton from './donate';
+import SiteVisit from './SiteVisit';
 
 
 export default function Footer() {
@@ -20,6 +21,7 @@ export default function Footer() {
             <div className='donate-section'>
                 <DonateButton/>
             </div>
+            <SiteVisit />
             </div>
         </div>
 
