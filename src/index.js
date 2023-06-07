@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import  './google-analytics';
+
+
 import ReactGA from 'react-ga';
 
 // Initialize Google Analytics with your measurement ID
