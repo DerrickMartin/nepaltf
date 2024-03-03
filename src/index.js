@@ -6,13 +6,11 @@ import reportWebVitals from './reportWebVitals';
 
 import  './google-analytics';
 
-
 import ReactGA from 'react-ga';
 
 // Initialize Google Analytics with your measurement ID
 ReactGA.initialize('G-H9YC1TFDN7');
 ReactGA.pageview(window.location.pathname);
-
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

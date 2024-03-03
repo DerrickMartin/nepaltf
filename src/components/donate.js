@@ -1,14 +1,16 @@
 import React, { useEffect, useMemo, useRef } from 'react';
 
-let counter = 0;
-
-const generateId = () => {
-    return `ID-${++counter}`; // if it is necessary, use some better unique id generator
-};
-
 const DonateButton = () => {
     const buttonRef = useRef(null);
-    const buttonId = useMemo(() => `ID-${generateId()}`, []);
+    // Use useRef to store the counter variable
+    const counterRef = useRef(0);
+
+    const generateId = () => {
+        return `ID-${++counterRef.current}`; // Increment the counter stored in useRef
+    };
+
+    const buttonId = useMemo(generateId, []); // No need to include counterRef in the dependency array
+
     useEffect(() => {
         const button = window.PayPal.Donation.Button({
             env: 'production',
@@ -19,8 +21,9 @@ const DonateButton = () => {
                 title: 'PayPal - The safer, easier way to pay online!',
             }
         });
-        button.render(`#${buttonRef.current.id}`); // you can change the code and run it when DOM is ready
-    }, []);
+        button.render(`#${buttonRef.current.id}`);
+    }, []); // The empty dependency array ensures this effect runs only once
+
     return (
         <div ref={buttonRef} id={buttonId} />
     );

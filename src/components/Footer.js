@@ -5,8 +5,6 @@ import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 
 import DonateButton from './donate';
-import SiteVisit from './SiteVisit';
-
 
 export default function Footer() {
     return (
@@ -18,10 +16,10 @@ export default function Footer() {
                 <SocialIcon url="https://facebook.com" style={{ width: 30, height:30, margin: 5}}/>
                 <SocialIcon url="https://tiktok.com" style={{ width: 30, height: 30, margin: 5}}/>
                 <SocialIcon url="https://instagram.com" style={{ width: 30, height: 30, margin: 5}}/>
-            <div className='donate-section'>
+                <div className='donate-section'>
                 <DonateButton/>
-            </div>
-            <SiteVisit />
+                </div>
+
             </div>
         </div>
 

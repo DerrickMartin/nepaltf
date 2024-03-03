@@ -27,13 +27,13 @@ li {
   padding: 5px;
   z-index: 2;
 }
+.App-logo {
+  height: 80vh;
+  width: auto; 
+ }
 .Link-style{
   text-decoration: none;
   color: var(--body_color);
-}
- .App-logo {
-  width: 70px;
-  height: 70px;
 }
 .nav-btn {
   padding: 5px;
@@ -46,14 +46,13 @@ li {
   opacity: 0;
 }
 
+
 @media only screen and (max-width: 720px) { 
   .App-header {
-    height: 13vh;
+    height: 14vh;
     justify-content: space-between;
   }
-  .App-logo {
-    margin-left: 5px;
-  }
+  
   #nav {
     position: fixed;
     top: -100vh;

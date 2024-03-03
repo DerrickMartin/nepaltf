@@ -2,7 +2,7 @@ import Logo from '../assets/NepalTF_Logo.png';
 import { Link } from "react-router-dom";
 
 import './NavbarStyle.css';
-import { useRef, useState } from "react";
+import { useRef,} from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 import DarkMode from './DarkMode/DarkMode';
@@ -15,10 +15,7 @@ export default function Navbar() {
 		navRef.current.classList.toggle(
 			"responsive_nav" );
     };
-    const [isOpen, setOpen] = useState(false);
-    const toggleModal = () => {
-        setOpen(!isOpen)
-    }
+
   return (
         <>
         <nav className='App-header'>
